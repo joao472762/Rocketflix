@@ -48,7 +48,7 @@ function App() {
   }
 
   useEffect(() => {
-    let moviesURl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-br&page=1`
+    let moviesURl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-br&page=2`
     axios.get(moviesURl).then(response => setMoviesList(response.data.results))
   }, [])
 
@@ -56,11 +56,8 @@ function App() {
     let moviePosition = Random.randomMoviePositionWithoutRepeat()
     let movieChoiced = moviesList[moviePosition]
     setMovie(movieChoiced)    
+    console.log(moviesList)
   }
-
-
-
-
 
   return (
     <div className={styles.app}>
@@ -69,6 +66,7 @@ function App() {
         <h1>Não sabe oque assistir?</h1>
       </header>
       <main>
+      
         
         {
           movie &&
