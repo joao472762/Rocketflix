@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:focus{
+    outline: none;
+    border: 0;
+}
+
+:root {
+  --white: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+body{
+
+    background: var(--background);
+    min-height: 100vh;
+
+}
+
+body,p, input, a{
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Poppis','Aria',sans-serif;
+}
+
+@media (max-width: 550px){
+    html{
+        font-size: 85%;
+    }
+}

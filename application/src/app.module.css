@@ -1,0 +1,99 @@
+div.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 2rem;
+}
+
+div.app header{
+    padding: 0 1rem;
+    margin-top: 7.875rem;
+    row-gap: 0.625rem;
+}
+
+div.app header img{
+    width: 5.452rem;
+    height: 4.187;
+
+    display: block;
+    margin: 0 auto;
+
+}
+div.app header h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+div.app main {
+    padding: 0 1rem ;
+    flex: 1;
+}
+div.app section.movieContent {
+    display: flex;
+    align-items: center;
+
+    
+    margin-top: 1.875rem;
+    column-gap: 2.125rem;
+}
+
+div.app section.movieContent img{
+    object-fit: cover;
+    width: 10.687rem;
+    height: 15.23rem;
+
+}
+
+div.app section.movieContent .movieDetails h2 {
+    font-size: 1.25rem;
+    font-weight: 600
+}
+
+div.app section.movieContent .movieDetails p{
+    margin-top: 1.187rem;
+    max-width: 26.437rem;
+
+    font-weight: 400;
+}
+
+div.app button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.06rem;
+    border-radius: 5px;
+
+    width: 11.312rem;
+    height: 2.937rem;
+    cursor: pointer;
+    margin: 1.875rem auto 0 auto;
+
+}
+div.app button img {
+    width: 2.222rem;
+    
+}
+
+
+div.app button strong {
+    font-size: .75rem;
+}
+
+div.app p.advise{
+    max-width: 23.81rem;
+    margin: 1.625rem auto 0 auto;
+}
+
+@media (max-width: 400px){
+    div.app section.movieContent{
+        row-gap: 1.875rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.app section.movieContent .movieDetails h2 {
+        text-align: center;
+    }
+}
+
